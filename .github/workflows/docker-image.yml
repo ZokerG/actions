@@ -37,8 +37,3 @@ jobs:
         docker-compose down
         docker-compose up -d --build
         EOF
-      ```
-
-- En este flujo:
-  - **SSH_PRIVATE_KEY**: Se usa para crear temporalmente un archivo `key.pem` que será usado para las conexiones SSH.
-  - **scp y ssh**: Estos comandos se conectan a tu VM usando la clave SSH para copiar los archivos y desplegar la aplicación.
